@@ -1,0 +1,65 @@
+/*https://keepcoding.io/blog/como-hacer-un-menu-de-navegacion-en-html/*/
+
+:root {
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+    color: var(--colorNormal);
+    background-color:transparent;
+    font-size:1rem; /*usando el rem, modifico el tamaño en proporcion en todas las etiquetas p, h1, h2 ... */
+}
+
+#verLogin {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width:180px;
+    font-weight: bolder;
+    z-index: 101; /*Para posicionarlo por encima del header*/
+}
+
+#contenido {
+    float:left;
+    margin-top: 100px;
+}
+
+header {
+    background: gray;
+    width: 100%;
+    position: fixed;
+    border-color:black;
+    border-style:solid;
+    border-width:1px;
+    z-index: 100;
+}
+
+nav {
+    float:left;
+    width:50%;
+}
+
+nav ul {
+    list-style: none;
+    overflow: hidden; 
+}
+
+nav ul li { /*para mostrar el menú en horizóntal y no en vertical*/
+    float: left;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav ul li a {
+    display: block; 
+    padding: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li:hover {
+    background: #eca023;
+}
+
+a {
+    display:inline-block;
+}
+

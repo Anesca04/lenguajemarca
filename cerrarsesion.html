@@ -4,34 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <link rel="stylesheet" href="./estilos.css"/>
-    <title>Página de Angel Estévanez Botello</title>
 </head>
 
 <body onload="verAjustes()">
-
     <header>
         <nav>
             <ul>
                 <li><a href="./index.html">Inicio</a></li>
                 <li><a href="./ajustes.html">Ajustes</a></li>
                 <li><a href="./acercade.html">A cerca de</a></li>
-                <li><a href="./cerrarsesion.html">Cerrar Sesión</a></li>
+                <li><a href="./cerrarsesion.html"  onclick="limpiarAjustes()">Cerrar Sesión</a></li>
             </ul>
         </nav>
-    </header>
- 
+    </header> 
+
     <div id="verLogin">
         <p id="mostrarUsuario"></p>
     </div>
 
     <div id="contenido">
-        <h2>PÁGINA PRINCIPAL</h2>
-        <p>Ejercicio del tercer trimestre del Lenguaje de Marcas. 
-            Este proyecto tiene un valor entre el 30 % y el 70% de la nota final del trimestre</p>
+        <h2>SESIÓN CERRADA</h2>
+        <p>Los ajustes de las páginas se han restablecido</p>
     </div>
 
     <script src="./funciones.js"></script>
 
 </body>
+
 </html>

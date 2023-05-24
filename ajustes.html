@@ -4,12 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <link rel="stylesheet" href="./estilos.css"/>
-    <title>Página de Angel Estévanez Botello</title>
 </head>
 
 <body onload="verAjustes()">
-
     <header>
         <nav>
             <ul>
@@ -19,19 +18,37 @@
                 <li><a href="./cerrarsesion.html">Cerrar Sesión</a></li>
             </ul>
         </nav>
-    </header>
- 
+    </header> 
+
     <div id="verLogin">
         <p id="mostrarUsuario"></p>
     </div>
 
     <div id="contenido">
-        <h2>PÁGINA PRINCIPAL</h2>
-        <p>Ejercicio del tercer trimestre del Lenguaje de Marcas. 
-            Este proyecto tiene un valor entre el 30 % y el 70% de la nota final del trimestre</p>
-    </div>
+        <h2>AJUSTES PERSONALIZADOS</h2>
+        <section id="ajustes">
+            <p id="color">Seleccionar el color: </p>
+            <input type="color" name="colorElegido" />
+            <br/>
+            
+            <p>Tamaño del texto: </p>
+            <select name="tamFuente">
+                <option value="0.8">Pequeña</option>
+                <option value="1.0" selected>Mediana</option>
+                <option value="1.4">Grande</option>
+            </select>
+            <br/>
 
+            <p>Nombre del usuario: </p>
+            <input type="text" name="nomUsuario" />
+            <br/>
+
+            <button type="button" onclick="guardarAjustes()">Guardar</button>
+        </section>
+    </div>
+    
     <script src="./funciones.js"></script>
 
 </body>
+
 </html>
