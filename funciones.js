@@ -40,6 +40,9 @@ function guardarAjustes() {
     document.documentElement.style.fontSize=parseFloat(tamelegido) + "rem";
     document.documentElement.style.setProperty("--colorNormal",color.value);
 
+    /*Muestro el login del usuario en la esquina superior izquierda*/
+    document.getElementById("mostrarUsuario").innerHTML = "Usuario: " + usuario.value;
+
     /*Guardo las dos variables para la sesión*/
     window.localStorage.setItem("tamLetra", tamelegido);
     window.localStorage.setItem("colorLetra", color.value);
@@ -54,5 +57,5 @@ function guardarAjustes() {
 function limpiarAjustes() {
     window.localStorage.clear();
     sessionStorage.clear();
-    alert('AJUSTES ELIMINADOS');
+    alert("AJUSTES ELIMINADOS");
 }
