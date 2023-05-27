@@ -2,7 +2,10 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 	<xsl:template match="/">
 		<html>
-			<head></head>
+			<head>
+				<link rel="stylesheet" href="canciones.css"/>	
+			</head>
+			
 			<body>
 				<h1>Canción: - <xsl:value-of select="cancion/titulo"/></h1>
 					<p>Autor: - <xsl:value-of select="cancion/autor"/></p>
