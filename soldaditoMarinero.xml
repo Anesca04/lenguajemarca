@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet type="text/xsl" href="cancion.xsl"?>
-<cancion xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:///S:/Dropbox/ANGEL/FP%20Superior/Lenguaje%20Marcas/3Trimestre/EjercicioFinal-3T/soldaditoMarinero.xsd">
+<cancion xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="soldaditoMarinero.xsd">
 	<titulo>Soldadito Marinero</titulo>
 	<autor>Fito y los Fitipaldis</autor>
 	<letra>
