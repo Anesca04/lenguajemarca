@@ -6,27 +6,27 @@
     padding:0;
     color: var(--colorNormal);
     background-color:transparent;
-    font-size:1rem; /*usando el rem, modifico el tamaño en proporcion en todas las etiquetas p, h1, h2 ... */
+    font-size:0.8rem; /*usando el rem, modifico el tamaño en proporcion en todas las etiquetas p, h1, h2 ... */
 }
 
 #verLogin {
     position: fixed;
     top: 10px;
     right: 10px;
-    width:180px;
-    font-weight: bolder;
+    width:160px;
+    font-weight: bold;
     z-index: 101; /*Para posicionarlo por encima del header*/
 }
 
-#contenido {
-    float:left;
-    margin-top: 100px;
+#contenedor {
+    display: flex;
+    flex-direction: column; /*para que los div vayan uno debajo de otro */
+    row-gap: 10px; /*espacio entre los div*/
 }
 
-header {
+#menu {
     background: gray;
     width: 100%;
-    position: fixed;
     border-color:black;
     border-style:solid;
     border-width:1px;
@@ -50,7 +50,7 @@ nav ul li { /*para mostrar el menú en horizóntal y no en vertical*/
 
 nav ul li a {
     display: block; 
-    padding: 20px;
+    padding: 10px;
     color: #fff;
     text-decoration: none;
 }

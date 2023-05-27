@@ -1,0 +1,8 @@
+body {background-color: grey;text-align: center;}
+div {padding-bottom: 36px;}
+h1 {color:blue;}
+p {padding-bottom: 12px;}
+.impar {background-color: white;}
+.par {background-color: rgb(175, 172, 172);}
+.primeraLinea::first-letter { font-size: 150%;font-weight: bold;font-style: italic;}
+.ultimaLinea::after {content:"..."}  

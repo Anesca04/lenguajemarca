@@ -5,12 +5,12 @@
 			<head></head>
 			<body>
 				<h1>Canción: - <xsl:value-of select="cancion/titulo"/></h1>
-				<h1>Autor: - <xsl:value-of select="cancion/autor"/></h1>
+					<p>Autor: - <xsl:value-of select="cancion/autor"/></p>
 				<br/>
 				
 				<xsl:for-each select="cancion/letra/estrofa">
 					<xsl:for-each select="verso">
-						<p><xsl:value-of select="."/></p>
+							<p><xsl:value-of select="."/></p>										
 					</xsl:for-each>
 				</xsl:for-each>
 					
