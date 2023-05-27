@@ -26,10 +26,12 @@ function verAjustes() {
 
 function guardarAjustes() {
     /*Recupero las variables*/
-    var color=document.getElementsByName('colorElegido')[0];
-    var tam=document.getElementsByName('tamFuente')[0];
+    var color=document.getElementsByName("colorElegido")[0];
+
+    var tam=document.getElementsByName("tamFuente")[0];
     var tamelegido=tam[tam.selectedIndex].value;
-    var usuario=document.getElementsByName('nomUsuario')[0];
+    
+    var usuario=document.getElementsByName("nomUsuario")[0];
 
     /*Para ver el valor de las variables por consola*/
     console.log('Color elegido: ' + color.value);
@@ -50,12 +52,14 @@ function guardarAjustes() {
 
     console.log('LocalStorage tamañoLetra: ' + window.localStorage.getItem("tamLetra"));
     console.log('LocalStorage color: ' + window.localStorage.getItem("colorLetra"));
-
-    //document.getElementById('mensaje').innerHTML="APLICADO";
 }
 
 function limpiarAjustes() {
-    window.localStorage.clear();
-    sessionStorage.clear();
-    alert("AJUSTES ELIMINADOS");
+    if (window.localStorage.getItem("tamLetra")) {  //Compruebo si existen ajustes guardados
+        window.localStorage.clear();
+        sessionStorage.clear();
+        alert("AJUSTES ELIMINADOS");
+    } else { //Muestro otro mensaje, cuando no hay ajustes
+        alert("NO EXISTEN AJUSTES");
+    }
 }
