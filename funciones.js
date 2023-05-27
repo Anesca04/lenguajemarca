@@ -12,7 +12,7 @@ function verAjustes() {
         document.documentElement.style.fontSize=parseFloat(tamLetra) + "rem";
         document.documentElement.style.setProperty("--colorNormal",colorLetra);
         /*Cambio el icono del ratón*/
-        document.getElementsByTagName("body")[0].style.cursor = "pointer";
+        document.getElementsByTagName("body")[0].style.cursor = "move";
 
         //Estas líneas se pueden comentar después, es para comprobaciones.
         console.log('AJUSTES CARGADOS');
@@ -44,7 +44,7 @@ function guardarAjustes() {
     document.documentElement.style.fontSize=parseFloat(tamelegido) + "rem";
     document.documentElement.style.setProperty("--colorNormal",color.value);
     /*Cambio el icono del ratón*/
-    document.getElementsByTagName("body")[0].style.cursor = "pointer";
+    document.getElementsByTagName("body")[0].style.cursor = "move";
 
     /*Muestro el login del usuario en la esquina superior izquierda*/
     document.getElementById("mostrarUsuario").innerHTML = "Usuario: " + usuario.value;
