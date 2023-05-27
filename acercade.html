@@ -9,29 +9,33 @@
 </head>
 
 <body onload="verAjustes()">
-    <header>
-        <nav>
+    <div id="contenedor">
+        <div id="menu">
+            <header>
+                <nav>
+                    <ul>
+                        <li><a href="./index.html">Inicio</a></li>
+                        <li><a href="./ajustes.html">Ajustes</a></li>
+                        <li><a href="./acercade.html">A cerca de</a></li>
+                        <li><a href="./cerrarsesion.html" onclick="limpiarAjustes()">Cerrar Sesión</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+
+        <div id="verLogin">
+            <p id="mostrarUsuario"></p>
+        </div>
+
+        <div id="contenido">
+            <h2>A CERCA DE...</h2>
             <ul>
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./ajustes.html">Ajustes</a></li>
-                <li><a href="./acercade.html">A cerca de</a></li>
-                <li><a href="./cerrarsesion.html" onclick="limpiarAjustes()">Cerrar Sesión</a></li>
+            <li>FP Superior DAM</li>
+            <li>Angél Estévanez Casas</li>
             </ul>
-        </nav>
-    </header> 
-
-    <div id="verLogin">
-        <p id="mostrarUsuario"></p>
+        </div>
     </div>
-
-    <div id="contenido">
-        <h2>A CERCA DE...</h2>
-        <ul>
-           <li>FP Superior DAM</li>
-           <li>Angél Estévanez Casas</li>
-        </ul>
-    </div>
-
+    
     <script src="./funciones.js"></script>
 
 </body>

@@ -9,26 +9,30 @@
 </head>
 
 <body onload="verAjustes()">
-    <header>
-        <nav>
-            <ul>
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./ajustes.html">Ajustes</a></li>
-                <li><a href="./acercade.html">A cerca de</a></li>
-                <li><a href="./cerrarsesion.html" onclick="limpiarAjustes()">Cerrar Sesión</a></li>
-            </ul>
-        </nav>
-    </header> 
+    <div id="contenedor">
+        <div id="menu">
+            <header>
+                <nav>
+                    <ul>
+                        <li><a href="./index.html">Inicio</a></li>
+                        <li><a href="./ajustes.html">Ajustes</a></li>
+                        <li><a href="./acercade.html">A cerca de</a></li>
+                        <li><a href="./cerrarsesion.html" onclick="limpiarAjustes()">Cerrar Sesión</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
 
-    <div id="verLogin">
-        <p id="mostrarUsuario"></p>
+        <div id="verLogin">
+            <p id="mostrarUsuario"> </p>
+        </div>
+
+        <div id="contenido">
+            <h2>SESIÓN CERRADA</h2>
+            <p>Los ajustes de las páginas se han restablecido</p>
+        </div>
     </div>
-
-    <div id="contenido">
-        <h2>SESIÓN CERRADA</h2>
-        <p>Los ajustes de las páginas se han restablecido</p>
-    </div>
-
+    
     <script src="./funciones.js"></script>
 
 </body>
