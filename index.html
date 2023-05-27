@@ -18,7 +18,6 @@
                         <li><a href="./index.html">Inicio</a></li>
                         <li><a href="./ajustes.html">Ajustes</a></li>
                         <li><a href="./soldaditoMarinero.xml" target="_blank">XML</a></li>
-                        <li><a href="./acercade.html">A cerca de</a></li>
                         <li><a href="./cerrarsesion.html" onclick="limpiarAjustes()">Cerrar Sesión</a></li>
                     </ul>
                 </nav>
@@ -34,8 +33,26 @@
             <p>Ejercicio del tercer trimestre del Lenguaje de Marcas. 
                 Este proyecto tiene un valor entre el 30 % y el 70% de la nota final del trimestre</p>
         </div>
+
+        <a href="#openModal">Ventana Modal</a>
+
     </div>
     
+    <div id="openModal" class="modalDialog">
+        <div>
+            <a href="#close" title="Close" class="close">X</a>
+            <h2>Ventana modal</h2>
+            <ul>
+                <li>FP Superior DAM</li>
+                <li>Angél Estévanez Casas</li>
+            </ul>
+            <p>Al cerrar la sesión compruebo primero si hay ajustes, dependiendo de esto la ventana emergente muestra una información diferente.</p>
+            <p>Para cargar los ajuestes guardados, uso el evento onload en el body.</p>
+            <p>Cuando hay ajustes, cambio el cursor del ratón por una mano.</p>
+            <p>El fichero XML, lo abro en una nueva ventana.</p>
+        </div>
+    </div>
+
     <script src="./funciones.js"></script>
 
 </body>
